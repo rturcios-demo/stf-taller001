@@ -19,9 +19,10 @@ spec:
     spec:
       containers:
       - name: gke-test
-        image: gcr.io/google-samples/hello-app:1.0
+        # image: gcr.io/google-samples/hello-app:1.0
+        image: gcr.io/PROJECT_ID/REPOSITORY/IMAGE:TAG
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
         resources:
           requests:
             cpu: 100m
