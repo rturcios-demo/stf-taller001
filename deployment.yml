@@ -19,8 +19,7 @@ spec:
     spec:
       containers:
       - name: gke-test
-         image: LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG
-        # image: us-central1-docker.pkg.dev/stf-taller001/stf-taller001/static-site:latest
+        image: LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG
         ports:
         - containerPort: 5000
         resources:
