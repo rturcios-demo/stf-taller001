@@ -37,9 +37,9 @@ jobs:
     #    service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
 
     # Alternative option - authentication via credentials json
-     - id: 'auth'
-       uses: 'google-github-actions/auth@v0'
-       with:
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v0'
+      with:
          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
     # Setup gcloud CLI
