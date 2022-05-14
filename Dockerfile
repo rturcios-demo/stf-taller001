@@ -7,8 +7,10 @@ COPY site .
 
 ARG GITHUB_SHA
 ARG GITHUB_REF
-ENV SHA=$GITHUB_SHA
-ENV REF=$GITHUB_REF
+#ENV SHA=$GITHUB_SHA
+#ENV REF=$GITHUB_REF
+ENV SHA=latest
+ENV REF=latest
 
 RUN sed -i 's,SHA,'"$GITHUB_SHA"',' index.html
 RUN sed -i 's,REF,'"$GITHUB_REF"',' index.html
