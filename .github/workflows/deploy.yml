@@ -67,8 +67,9 @@ jobs:
           # --build-arg GITHUB_SHA="$GITHUB_SHA" \
           # --build-arg GITHUB_REF="$GITHUB_REF" \
           # .
+          . \
+          --file Dockerfile \
           --tag gcr.io/stf-taller001/$IMAGE:$TAG
-          .
 
     # Push the Docker image to Google Artifact Registry
     - name: Publish
